@@ -1,0 +1,67 @@
+body{
+    background:#f3b978;
+    font-size: 20px;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+}
+
+/* UNIDADES de MEDIDA
+ Absolutas:cm, mm, in
+ Relativas:px, em, rem, %
+ */
+
+
+ /* Medidad de Color
+  Hexadecimal
+  RGB
+  Colores solidos
+ */
+
+ /* MODELO de CAJA
+  margin
+  border
+  padding
+  
+ */
+div{
+    background:hsl(144, 75%, 43%);
+    width: 60%;
+    
+
+    margin:50px; 
+    padding: 30px;
+
+    border:solid #f5df87 30px
+} 
+
+h1{
+    color:;
+}
+
+
+h2,h3,h4{
+
+    font-size: 1.5em;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color:#5a4307;
+}
+
+article h2{
+    color:yellowgreen;
+}
+p{
+    color:black;
+    background:skyblue;
+}
+
+.parrafo3{
+    color:brown;
+    /*font-size: 30px;*/
+}
+
+#h4{
+    color:darkblue;
+    /*font-size:50px;*/
+
+}
+

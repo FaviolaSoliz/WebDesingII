@@ -1,0 +1,48 @@
+/* Podemos eliminar los margenes internos y paddings que agregan por defecto los navegadores */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+div
+{
+	background: #d8a473;
+	width: 500px;
+	
+	/*
+	margin-top:30px;
+	margin-right: 100px;
+	margin-bottom: 30px;
+	margin-left: 100px;
+*/
+	margin: 50px;
+
+	padding: 30px 50px;
+
+	border:double black 15px;
+
+}
+
+	p{
+		background: skyblue;
+	}
+
+body { 
+	font-family: Arial;
+	line-height: 40px;
+}
+/*
+.caja {
+	background:#0353a4;
+	/*width:200px;*/
+	height:200px;
+	margin:50px;
+	padding: 50px;
+	border:double;
+	/*padding:20px 10px 5px 0px;*/
+/*	
+}
+
+.caja p {
+	background: #865285;
+}

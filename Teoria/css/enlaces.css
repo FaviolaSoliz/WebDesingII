@@ -1,0 +1,38 @@
+a {
+	font-size: 50px;
+    text-decoration:none;
+    color:black;
+    background:skyblue;
+    padding: 10px;
+    margin:10px;
+}
+
+/* Enlace sin visitar */
+
+a:link {
+   text-decoration: none;
+   color:brown;
+
+}
+
+/* Enlace visitado */
+
+a:visited {
+    color: rgba(20, 19, 16, 0.733);
+
+}
+/*
+/* Estado del enlace mientras se pasa el mouse por */
+
+a:hover {
+    
+    color:purple;
+    font-size:80px;
+}
+
+/* Estado del enlace mientras se esta haciendo click */
+a:active {
+
+    text-decoration: underline;
+    
+}
