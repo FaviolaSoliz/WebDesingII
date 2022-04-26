@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+
+    <button id="boton">Funcionar</button>
+    <button id="desactivar">Desactivar</button>
+    <a href="https://google.com"> Gooogle</a>
+
+    
+    <script>
+
+        //$(document).ready(function(){})
+        
+        $(function(){
+
+            var btn =$('#boton')
+
+         // $('#boton').click(function(){alert('Se hizo click')})
+          //  btn.click(function(){ alert('Hola');})
+    
+          // btn.on('click', Saludo);
+         // Evento 1
+          btn.on('mouseenter', function(){
+              // Combinar js con jquery
+                document.body.style.background='#325625';
+
+        });
+
+        // Evento 2
+          btn.on('mouseleave', function(){
+                    // Combinar js con jquery
+                      document.body.style.background='#CCC';
+        });
+
+        
+        // Evento 3
+        btn.on('click', function(){
+            // Combinar js con jquery
+              document.body.style.background='#845632';
+    });
+
+    // Eliminar eventos
+
+        $('#desactivar').on('click', function(){
+
+            btn.off('click');
+            alert('desacactivado');
+            console.log('btn desactivado');
+        });
+
+    
+    // prevenir comportamento por defecto (enlace)
+
+        $('a').on('click',function(e){
+            e.preventDefault();
+            //alert('Enlace bloqueado');
+        });
+        
+    });
+        function Saludo()
+        {
+            alert('Holaaaa');
+        }
+    </script>
+</body>
+</html>

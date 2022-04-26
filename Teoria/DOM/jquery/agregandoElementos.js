@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+	//$('#contenedor')
 	var contenedor = $('#contenedor');
 	var contador = 1;
 	// Creamos una nueva caja con Jquery
@@ -9,10 +11,10 @@ $(document).ready(function(){
 		contador++;
 
 // Append agrega contenido al INICIO de un contenedor.
-		// contenedor.append(caja);
+		 contenedor.append(caja);
 		
 // Prepend agrega contenido al FINAL de un contenedor.
-		contenedor.prepend(caja);
+		//contenedor.prepend(caja);
 
 // Before me permite posicionar un elemento ANTES de otro.
 		// contenedor.before(caja);

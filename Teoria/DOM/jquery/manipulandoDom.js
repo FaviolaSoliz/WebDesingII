@@ -1,25 +1,26 @@
 $(document).ready(function(){
 
 // .text()
-	// $('#titulo').text('Encabezado Modificado con Jquery');
+//	 $('#titulo').text('<u>Faviola</u>');
 
 // .html()
-	$('#titulo').html('<u>Encabezado Modificado con Jquery</u>');
+//	$('#titulo').html('<u>Encabezado Modificado con Jquery</u>');
 
 // .val()
-	var nombre = $('#nombre');
+/*	var nombre = $('#nombre');
 	nombre.on('change', function(){
 		$('#titulo').text(nombre.val());
-	});
+	});*/
 	
 // .attr()
-	$('#enlace').text('FalconMasters.com');
-	$('#enlace').attr('href', 'http://www.falconmasters.com');
+	$('#enlace').text('UPDS');
+//	$('#enlace').attr('href', 'http://www.upds.edu.bo');
 	
 	// Multiples atributos.
 	$('#enlace').attr({
 		'class': 'azul',
-		'target': '_blank'
+		'target': '_blank',
+		'href': 'http://www.upds.edu.bo'
 	});	
 
 });

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones JQuery</title>
+
+    <script src="jquery.min.js"></script>
+    <style>
+        .caja{
+            width:200px ;
+            height: 200px;
+            background: #789321;
+            margin-top: 20px;
+        }
+
+        @keyframes colores{
+            0%{background: #000;}
+            50%{background: #789321;}
+            100%{background: #000;}
+        }
+
+        .animacion{
+            animation:colores 4s ease;
+        }
+    </style>
+
+</head>
+<body>
+
+    <button id="boton">Animar</button> <br>
+    <div class="caja" id="caja"></div>
+
+    <script>
+        $(function(){
+            
+            $('#boton').on('click',function(){
+
+               // Syntax de animacion
+
+              // $('#caja').addClass('animacion');
+
+              // $('selector').animate({parametro},velocidad,function(){});
+               
+                $('.caja').animate({
+                    //width:'+=100px',
+                    //marginLeft:'+=40px',
+                    //opacity:'0.5'
+
+                    // No soporta animaciones de color
+                    //background:'#000';
+
+                },
+                function(){
+                   // alert();
+                })
+
+                $('#caja').toggleClass('animacion'); 
+            })
+
+                $('.caja').animate({
+                    marginLeft:'+=40px'
+                });     
+
+        });
+
+    </script>
+</body>
+</html>

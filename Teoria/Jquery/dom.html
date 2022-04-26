@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+
+    <style>
+        .caja{
+            width: 150px;
+            height: 150px;
+            background: rgb(247, 161, 62);
+            margin: 10px;
+            padding: 10px;
+            color:#FFF;
+            text-align: center;
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
+        }
+
+        .color{
+            background:#3299BB;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja">1</div>
+        <div class="caja">2</div>
+        <div class="caja" id="tercera">3</div>
+        <div class="caja">4</div>
+    
+    </div>
+
+    <script>
+
+        $(document).ready(function(){
+
+            // THIS
+
+            $('.caja').on('mouseenter', function(){
+                
+               // $(this).css({background:'#3299BB'});
+               $(this).toggleClass('color');
+            })
+
+            
+            //FILTROS
+            //FIRST
+
+            //$('.caja').first().css({color:'red'});
+            //LAST
+            //$('.caja').last().css({color:'red'});
+            //EQ
+            //$('.caja').eq(2).css({color:'red'});
+
+            // FILTER nos permite filtar entre los
+            // elementos bajo algun criterio
+
+           // $('.caja').filter('#tercera').hide(3000);
+
+            // not
+
+            //$('.caja').not('#tercera').css({background:'skyblue'});
+
+           // var cjas =$('.caja');
+
+           // cjas.hide(5000);
+
+
+            // Parent
+            //$('#tercera').parent().css({background:'#459382'})
+            // Parents
+            //$('#tercera').parents()
+            // Children
+            //$('.contenedor').children().css({color:'#CCC'});
+            // Find
+            //$('.contenedor').find('div.caja').hide(2000);
+            // Siblings
+            //$('#tercera').siblings().fadeOut(3000);
+            // Next Prev
+            //$('#tercera').next().fadeOut(3000);
+            //$('#tercera').prev().css({background:'#927541'});
+            //$('#tercera').nextAll().css({background:'#927541'});
+        })
+    </script>
+</body>
+</html>
