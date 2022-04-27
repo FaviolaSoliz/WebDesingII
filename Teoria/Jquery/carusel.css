@@ -13,9 +13,9 @@ body{
 #c-carrusel{
     margin: auto;
     width:85% ;
-    max-width: 900px;
+    max-width: 1000px;
     position: relative;
-   overflow: hidden;
+    overflow: hidden;
 }
 #carusel{
     display:flex;
