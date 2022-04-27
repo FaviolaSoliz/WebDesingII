@@ -15,7 +15,7 @@ body{
     width:85% ;
     max-width: 900px;
     position: relative;
-    overflow: hidden;
+   overflow: hidden;
 }
 #carusel{
     display:flex;
@@ -51,8 +51,8 @@ body{
 }
 #btn-antes
 {
-    left: 8px;
+    left: 10px;
 }
 #btn-despues{
-    right: 8px;
+    right: 10px;
 }
